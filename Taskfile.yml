@@ -1,0 +1,15 @@
+version: "3"
+
+tasks:
+  default:
+    desc: show commands
+    cmds:
+      - task -l --sort none
+  hello:
+    desc: This task says Hello, World!
+    cmds:
+      - echo "Hello, World!"
+  up:
+    desc: Exec docker compose up. run server
+    cmds:
+      - docker-compose up
